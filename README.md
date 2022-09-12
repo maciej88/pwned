@@ -1,2 +1,9 @@
-# pwned
-Have you be pwned?
+# Have You been pwned?
+This is simple small program to check leak of password.
+
+1. Download and configure repo.
+2. Run program from console:
+python3 passcheck.py "here give passwords what whant you to check".
+3. And you will recive answer in console with number of leaks :)
+
+to chcek leak was used API from: https://haveibeenpwned.com/
