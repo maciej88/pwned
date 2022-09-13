@@ -32,10 +32,11 @@ def main(args):
             print(f'{password}, NOT FOUND!')
     return '==end of checking=='
 
-# def get_file_data():
-#     with open('./text.txt', mode='r') as my_file:
-#         myfile = my_file.read()
-#         return myfile
+def get_file_data(input_file):
+    with open(f'{input_file}', 'r') as my_file:
+        for line in my_file:
+            for word in line.split():
+                return main(word[1:])
 
 if __name__ == '__main__':
-    sys.exit(main(sys.argv[1:]))
+    sys.exit(get_file_data(sys.argv[1:]))
