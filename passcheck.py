@@ -33,10 +33,10 @@ def main(args):
     return '==end of checking=='
 
 def get_file_data(input_file):
-    with open(f'{input_file}', 'r') as my_file:
-        for line in my_file:
-            for word in line.split():
-                return main(word[1:])
+    file = input_file[0]
+    with open(f'./{file}', 'r') as my_file:
+        words = my_file.read().split()
+        return main(words)
 
 if __name__ == '__main__':
     sys.exit(get_file_data(sys.argv[1:]))
