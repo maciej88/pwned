@@ -7,3 +7,5 @@ python3 passcheck.py "here give txt file name with all psswors separated by spac
 3. And you will recive answer in console with number of leaks :)
 
 to chcek leak was used API from: https://haveibeenpwned.com/
+
+This method is more secured. File after use schould be cleared and deleted - it don't left passwords in memory.
